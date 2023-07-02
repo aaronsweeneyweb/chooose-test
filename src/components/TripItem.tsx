@@ -9,13 +9,20 @@ const STAR_CONFIG = {
   spacing: '0px'
 }
 
+const getSubtitle = (countries: number, days: number) => {
+  const countryString = countries > 1 ? 'countries' : 'country';
+  const daysString = days > 1 ? 'days' : 'day';
+
+  return `${countries} ${countryString}, ${days} ${daysString}`;
+}
+
 const TripItem = (item: TripItemProps) => {
+  const subtitle = getSubtitle(item.countries, item.days);
 
   return (
     <div>
       <div>{item.title}</div>
-      <div>{item.countries}</div>
-      <div>{item.days}</div>
+      <div>{subtitle}</div>
       <StarRatings
         rating={item.rating}
         starRatedColor={STAR_CONFIG.color}

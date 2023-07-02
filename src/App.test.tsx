@@ -22,7 +22,6 @@ mock.onGet('http://localhost:3001/trips').reply(200, [
 test('fetches and displays data', async () => {
   render(<Home />);
   await waitFor(() => expect(screen.getByText('European Quest')).toBeInTheDocument());
-  await waitFor(() => expect(screen.getByText('1')).toBeInTheDocument());
-  await waitFor(() => expect(screen.getByText('2')).toBeInTheDocument());
+  await waitFor(() => expect(screen.getByText('1 country, 2 days')).toBeInTheDocument());
   await waitFor(() => expect(screen.getByText('5')).toBeInTheDocument());
 });
