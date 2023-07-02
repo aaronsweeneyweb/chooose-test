@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import TripItemList from './TripItemList';
 import { TripItemProps } from '../types';
 
 const Home = () => {
@@ -15,9 +16,7 @@ const Home = () => {
 
   return (
     <div>
-      {data.map(item => (
-        <div key={item.id}>{item.title}</div>
-      ))}
+      <TripItemList trips={data}/>
     </div>
   )
 }
