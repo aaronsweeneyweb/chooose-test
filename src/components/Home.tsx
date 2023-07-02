@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import TripItemList from './TripItemList';
 import { TripItemProps } from '../types';
+import { Container } from "@chakra-ui/react";
 
 const Home = () => {
   const [ data, setData ] = useState<TripItemProps[]>([]);
@@ -15,9 +16,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <Container
+      maxW="full"
+      padding="0px"
+    >
       <TripItemList trips={data}/>
-    </div>
+    </Container>
   )
 }
 
