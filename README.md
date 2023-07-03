@@ -43,7 +43,7 @@ Run the mock backend server:
 
 Run project in **development** mode:
 
-`npm run dev`
+`npm run start`
 
 <br>
 
