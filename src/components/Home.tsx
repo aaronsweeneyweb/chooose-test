@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import TripItemList from './TripItemList';
 import { TripItemProps } from '../types';
-import { Container, Box, Spinner, Center, Text } from '@chakra-ui/react';
+import { Container, Box, Spinner, Center } from '@chakra-ui/react';
 
 const Home = () => {
   const [loading, setLoading] = useState(false);

@@ -1,6 +1,6 @@
 import { TripItemProps } from '../types';
 import StarRatings from 'react-star-ratings';
-import { Box, Flex, Heading, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 
 const STAR_CONFIG = {
   color: '#F9D110',
