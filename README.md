@@ -1,46 +1,131 @@
-# Getting Started with Create React App
+# Aaron Sweeney - Chooose Technical Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+**Position:** Senior Frontend Engineer
 
-### `npm start`
+**Date:** 3 July 2023
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Github Repository](https://github.com/aaronsweeneyweb/chooose-test)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
+<br>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to run the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+First, install all dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm install`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Run the mock backend server:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`npm run server`
 
-## Learn More
+<br>
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*You can then run the project in either **development** mode or **production** mode.*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
+
+
+
+Run project in **development** mode:
+
+`npm run dev`
+
+<br>
+
+Run project in production mode:
+
+`npm run build`
+
+`npm run serve`
+
+
+<br>
+<br>
+
+
+Run tests:
+
+`npm run test`
+
+<br>
+<br>
+
+---
+
+<br>
+
+
+### Requirements:
+
+<br>
+
+**1. The website should be responsive and built with ReactJS functional components and Typescript.**
+
+Trips will wrap and title text will truncate when longer than 2 lines. Styles should hold up for screen widths as low as 200px. React & Typescript were used for this project.
+
+<br>
+
+**2. Data should be downloaded asynchronously from a mock server - serving json files (any technology).**
+
+I used the json-server library to act as a mock server & axios in order to fetch data. Basic loading and error state handling is present.
+
+<br>
+
+**3. Changing the number of elements in the json file should change the number of elements on the page.**
+
+I took the approach of treating the trips.json file as a database. As long as the mock server is running, any changes to this file should be reflected on the UI after refreshing the browser.
+
+<br>
+
+**4. The code should be placed in any repository along with instructions on how to run the project.**
+
+You can find the repository [here](https://github.com/aaronsweeneyweb/chooose-test)
+
+<br>
+
+**5. [Optional] Usage of Chakra UI will be a plus.**
+
+I have no proir experience using Chakra UI, but made a best attempt at implementing styles using Chakra.
+
+<br>
+
+**6. [Nice to have] Unit tests.**
+
+United tests were added for the following cases:
+- The loading spinner renders while data fetching is in progress. 
+- The correct data is rendered to the page upon a successful fetch.
+- An error message renders when there is an problem fetching the data. 
+
+<br>
+<br>
+
+---
+
+<br>
+
+### Potential Improvements:
+
+<br>
+
+Given that this was an assessment with only a few requirements and no plans to scale the project, I didn't feel the need to go too extreme with features.
+
+Handling specific error cases to provide a better user experience in the event that a problem occurs. React rrror boundaries is usually good practice for handling these situations.
+
+Since I have no prior experience using Chakra UI, there may be some bad practices present. This is something that I could learn more about over time and observe through good standards in an existing project. 
+
+File locations & folder structure should be improved if considering scaling this project.
