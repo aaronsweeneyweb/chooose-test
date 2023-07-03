@@ -1,6 +1,6 @@
-import TripItem from "./TripItem";
-import { TripItemProps } from "../types";
-import { Flex } from "@chakra-ui/react";
+import TripItem from './TripItem';
+import { TripItemProps } from '../types';
+import { Flex } from '@chakra-ui/react';
 
 type TripItemListProps = {
   trips: TripItemProps[];
@@ -12,7 +12,7 @@ const TripItemList: React.FC<TripItemListProps> = ({ trips }) => {
     <Flex
       flexWrap='wrap'
       justifyContent='center'
-      alignItems="center"
+      alignItems='center'
     >
       {trips.map((item: TripItemProps) => (
         <TripItem

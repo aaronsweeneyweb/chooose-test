@@ -4,7 +4,7 @@ export type TripItemProps = {
   countries: number;
   days: number;
   emissionsValue: number;
-  emissionsUnit: "kg" | "t";
+  emissionsUnit: 'kg' | 't';
   rating: number;
   imageUrl: string;
 }
