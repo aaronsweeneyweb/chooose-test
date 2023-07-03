@@ -41,6 +41,7 @@ afterEach(() => {
 });
 
 
+
 test('displays loading spinner while fetching data', async () => {
   mock.onGet(url).reply(200, mockData);
 
@@ -54,8 +55,6 @@ test('displays loading spinner while fetching data', async () => {
 
   await waitFor(() => expect(screen.queryByTestId('loading-spinner')).not.toBeInTheDocument());
 });
-
-
 
 
 
@@ -78,6 +77,7 @@ test('fetches and displays the correct data', async () => {
   await waitFor(() => expect(screen.getByText('4 t CO₂e')).toBeInTheDocument());
   await waitFor(() => expect(screen.getByText('4.9')).toBeInTheDocument());
 });
+
 
 
 test('displays error message when fetching data fails', async () => {
